@@ -4,14 +4,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 <title>Insert title here</title>
 </head>
 <body>
+    <div id="user"></div>
 <script>
-var profile = googleUser.getBasicProfile();
-console.log('Prenom: ' + profile.getFamilyName());
-console.log("Email: " + profile.getEmail());
-console.log('nom: ' + profile.getName());
+    document.getElementById("user").innerHTML = `<p>Welcome ${localStorage.getItem("name")} !</p>`
 </script> 
 </body>
 </html>
